@@ -1,0 +1,192 @@
+ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    background-color:goldenrod;
+	border-radius:10px;
+}
+li{
+    float:left;
+	width:25%;
+	text-align:center;
+}
+li a{
+    display:block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+li a:hover{
+    background-color:darkgoldenrod; 
+}
+ul li ul{
+    background-color:goldenrod;
+    display:none;
+    position:absolute;
+    width:24.7%;
+	z-index:2;
+}
+ul li:hover ul{
+    display:block;
+}
+li ul li{
+    display:block; 
+	width:100%;
+}
+#yorumlar .crow{
+    background:rgba(255,255,255,0.8);
+    margin:10px 0;
+    border-radius:10px;
+}
+#yorumlar .chead{
+    margin-bottom:10px;
+}
+#yorumlar .isim{
+    color:#cc0000;
+    font-weight:bold;
+    padding:1%;
+    font-size:120%;
+}
+#yorumlar .ctime{
+    color:#000066;
+    font-weight:bold;
+    padding-left:1%;
+}
+#yorumlar .mesaj{
+    font-size:120%;
+    font-weight:bold;
+    padding:1%;
+}
+#cadd{
+    background:rgba(255,255,255,0.6);
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold;
+}
+#cadd h1{
+    font-size:1.3em;
+}
+#cadd input[type=text], #cadd textarea{
+    box-sizing:border-box;
+    width:100%;
+    margin:5px 0;
+    padding:10px;
+    resize:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+#cadd input[type=submit]{
+    color:black;
+    padding:10px;
+    cursor:pointer;
+    border-radius:10px;
+    font-weight:bold;
+}
+input:focus{
+      border-radius:10px;
+}
+input[type=submit]:active{
+      background-color:gray;
+}
+body,html{
+      background-image:url('manzara.jpg');
+      background-size:cover;
+      background-attachment:fixed;
+      margin:auto;
+}
+#kart{
+    display: flex; 
+    position: relative;
+    background:rgba(255,255,255,0.6);
+    border-radius: 10px;    
+    animation-name:kay;
+	animation-duration:2s;
+	animation-fill-mode:both;
+}
+@keyframes kay{
+	from {left:-110%;}
+    to {left:0%;}
+}
+#cover{
+    display: flex; 
+    flex: 2;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    margin: 2%;
+}
+.kutucuk{
+    background:rgba(255,255,255,0.6);
+    position:relative;
+    border-radius:10px;
+}
+.yazi{
+    text-align:center;
+    margin:auto;
+    padding:5%;
+    font-size:150%;
+    word-wrap:break-word;
+    font-weight:bold;
+}
+
+.column{
+	position:relative;
+    float:left;
+    width:20%;
+	height:auto;
+    margin:auto;
+    padding:1%;
+	padding-left:3%;
+    flex-wrap: wrap;
+}
+.row{
+	position:relative;
+	border-radius:10px;
+	margin:auto;
+	height:auto;
+	background:rgba(255,255,255,0.6);
+}
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:16px;
+    text-align:center;
+    background-color:#f1f1f1;
+	border-radius:10px;
+	height:500px;
+	position:relative;
+}
+@media screen and (max-width: 500px){
+.column{
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+	height:auto;
+}
+}
+#resim2{
+	width:80%;
+	height:55%;
+}
+.yaz3{
+	text-align:center;
+	font-size:120%;
+	padding:5px;
+	font-weight:700;
+	width:95%;
+	word-wrap:break-word;
+}
+.yaz1{
+	text-align:center;
+	font-size:150%;
+	padding:5px;
+	font-weight:700;
+	width:95%;
+	word-wrap:break-word;
+}
